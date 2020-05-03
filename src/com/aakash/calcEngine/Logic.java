@@ -25,5 +25,15 @@ public class Logic {
 		Equation.execute();
 		System.out.println("Result="+" "+Equation.getResult());
 	}
+		
+		System.out.println();
+		System.out.println("Using Overloading");
+		System.out.println();
+		
+		double leftDouble=9.0d;
+		double rightDouble=4.0d;
+		MathEquation equationOverload= new MathEquation('d');
+		equationOverload.execute(leftDouble,rightDouble);
+		System.out.println(equationOverload.getResult());
 	} 
 }
