@@ -89,6 +89,6 @@ public class MathEquation {
 		this.rightVal=rightVal;
 		
 		execute();
-		result=(int)result;
+		result=(int)result; 
 	}
 }

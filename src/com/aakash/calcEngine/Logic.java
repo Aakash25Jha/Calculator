@@ -35,5 +35,19 @@ public class Logic {
 		MathEquation equationOverload= new MathEquation('d');
 		equationOverload.execute(leftDouble,rightDouble);
 		System.out.println(equationOverload.getResult());
+		
+		System.out.println();
+		System.out.println("Using Inheritance");
+		System.out.println();
+		
+		CalculateBase[] calculator= 
+		{
+		new Divider(100.0d, 50.0d), new Adder(90.0d,45.0d) , new Subtracter(40.0d,20.0d), new Multiplier(2.0d,10.0d)
+		};
+		for(CalculateBase cal: calculator)
+		{
+			cal.calculate();
+			System.out.println("The Result is="+" "+cal.getResult());
+		}
 	} 
 }
